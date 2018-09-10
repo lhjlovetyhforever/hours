@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/up_house/up_house",
+    "pages/up_rescue/up_rescue",
+    "pages/house_type/house_type",
+    "pages/house_address/house_address",
+    "pages/huros/hours",
+    "pages/rescue/rescue",
+    "pages/rescue_type/rescue_type",
+    "pages/rescue_data/rescue_data",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

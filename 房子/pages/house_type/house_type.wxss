@@ -1,0 +1,32 @@
+/* pages/house_type/house_type.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type {
+  width: 98%;
+  height: 98%;
+  background-color: #fff;
+  border-bottom: 1rpx solid #ededed;
+  font-weight: 600;
+  font-size: 35rpx;
+}
+
+.item1 {
+  display: flex;
+  justify-content: center;
+}
+
+.item2 {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,62 @@
+<!-- <form bindsubmit="tijiao" style='width:100%;height:100%;'>
+  <view style="width:100%;height:100%;">
+    <view class='item' style='width:100%;height:5%;'>
+      请根据你的需求，选择相应的信息。
+    </view>
+    <view  style='width:100%;height:92%'>
+      <view  style='width:90%;height:90%;margin:auto'>
+        <block wx:for="{{showlist}}" wx:for-index="idex">
+          <view class='item' style='width:100%;height:22.5%;'>
+            <view class='item' style='width:87%;height:80%;border:1rpx solid red'>
+              {{item.a.fmodularName}}{{item.a.fmodularName=='面积' ? "(m²)" :item.a.fmodularName=='租金' ? "(元)" :'' }}
+            </view>
+            <view class='item' style='width:60%;height:80%;border:1rpx solid red;border-right:0rpx;'>
+              <picker bindtap='aa' data-ida='{{idex}}' bindchange="bindPickerChange" value="{{index}}" range="{{item.list}}">
+                <view class="picker">
+                  {{selectlist[idex].text==a ?"请选择" :selectlist[idex].text }}
+                </view>
+              </picker>
+            </view>
+            <view class='item' style='width:30%;height:80%;border:1rpx solid red;border-left:0rpx;'>
+              <view style='height: 20rpx;width: 20rpx;border-width: 8rpx 8rpx 0 0;border-color: #000;border-style: solid;transform: rotate(135deg);'></view>
+            </view>
+          </view>
+        </block>        
+      </view>
+      <view class='item' style='width:100%;height:12%;'>
+          <button form-type="submit" class='item' style='width:80%;height:80%;background-color:red;color:#fff'>
+            查找
+          </button>
+        </view>
+    </view>
+  </view>
+</form> -->
+
+<view style='width:100%;height:100%;'>
+  <view style='height:100rpx;'></view>
+  <view class='item' style='height:50rpx;'>
+    请根据您的需求
+  </view>
+  <view class='item' style='height:100rpx;'>
+    选择相应的信息
+  </view>
+  <view style='height:15rpx'></view>
+  <view class='item' style='width:100%;height:200rpx;'>
+    <view catchtap='house' class='item type'>
+      房 东 直 租
+    </view>
+  </view>
+  <view style='height:20rpx;'></view>
+  <view class='item' style='width:100%;height:200rpx;'>
+    <view catchtap='rescue' class='item type'>
+      本 地 服 务
+    </view>
+  </view>
+
+  <view class='item' style='width:100%;height:5%;position:absolute;top:94%;'>
+    <button class='item' plain open-type="contact" style='width:500rpx;height:120rpx;border:0rpx;color:gray;font-size:32rpx;'>
+      如遇问题，请联系客服
+      <view style='height: 20rpx;width: 20rpx;border-width: 4rpx 4rpx 0 0;border-color: gray;border-style: solid;transform: rotate(45deg);'></view>
+    </button>
+  </view>
+</view>

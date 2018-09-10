@@ -1,0 +1,51 @@
+<!--pages/huros/hours.wxml-->
+<view style='width:100%;height:100%;'>
+  <view class='item' style='width:100%;height:90%;'>
+    <view style='width:97%;height:100%;'>
+      <scroll-view style='width:100%;height:100%;' scroll-y="true">
+        <block wx:if="{{datalist==null||datalist==''}}">
+          <view class='item' style='font-size:30rpx;color:red;width:100%;height:100%;'>
+            {{tip}}
+          </view>
+        </block>
+        <block wx:for="{{datalist}}" wx:for-index="idex">
+          <view style='height:2%;'></view>
+          <view catchtap='lookDetail' id='{{idex}}' class='item' style='width:100%;height:120rpx;background-color:#fff;'>
+
+          <view style='width:5%;height:100%;'></view>
+            <view class='item' style='width:80%;height:100%;font-size:30rpx;'>
+              <view  style='width:100%;height:30rpx;font-size:30rpx;line-height:30rpx;overflow:hidden;'>
+                <view style='width:100%;height:100%;'>
+                {{item.content}}
+                </view>
+              </view>
+            </view>
+            <view class='item' style='width:15%;height:100%;'>
+              <view style='height: 16rpx;width: 16rpx;border-width: 4rpx 4rpx 0 0;border-color: gray;border-style: solid;transform: rotate(45deg);'></view>
+            </view>
+          </view>
+        </block>
+        <view style='height:60rpx;'></view>
+      </scroll-view>
+      <view class='item' style='width:100%;height:140rpx;position:absolute;bottom:10rpx;'>
+        <view catchtap='b' class='item' style='width:80%;height:90%;border-radius:10rpx;background-color:red;color:#fff;font-size:40rpx;'>
+          我要发布信息
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view catchtap='close1' class='popup-backdrop item' style='display:{{show}}'>
+    <view catchtap='d' style='width:70%;height:70%;background-color:#fff'>
+      <view style='height:10%;'></view>
+      <view style='width:80%;height:75%;margin:auto;font-size:30rpx;'>
+        {{dqfy.content}}
+      </view>
+      <view style='height:3%;'></view>
+      <view class='item' style='width:100%;height:10%;'>
+        <button catchtap='close' class='item' style='width:70%;height:90%;font-size:30rpx;background-color:red;color:#fff'>联系服务专家</button>
+      </view>
+    </view>
+  </view>
+</view>
